@@ -1,8 +1,11 @@
 cask "opentypeless" do
-  version "1.3.7"
-  sha256 "a95754e4862d0e84194a0beaedcbee8c918905dc3ac1a2405184ea341a08dc10"
+  arch arm: "arm64", intel: "x64"
 
-  url "https://github.com/Tyler913/OpenTypeless/releases/download/1.3.7/OpenTypeless-#{version}-macOS-arm64.zip"
+  version "1.3.8"
+  sha256 arm:   "658ce633a661abb358c3313734997f2ab232eb9aca1271e05ad6b1254d450903",
+         intel: "4c3396e4a85765e229360e700b1fb3c49a5c11cadfe6509977bd7f37fa752f58"
+
+  url "https://github.com/Tyler913/OpenTypeless/releases/download/1.3.8/OpenTypeless-#{version}-macOS-#{arch}.zip"
   name "OpenTypeless"
   desc "Voice typing: hold a key, talk, and cleaned-up text is pasted at the cursor"
   homepage "https://github.com/Tyler913/OpenTypeless"
@@ -14,7 +17,6 @@ cask "opentypeless" do
 
   # The app updates itself from GitHub Releases (Settings → General → Updates).
   auto_updates true
-  depends_on arch: :arm64
   depends_on macos: :tahoe
 
   app "OpenTypeless.app"
