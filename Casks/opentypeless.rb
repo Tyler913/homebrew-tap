@@ -1,11 +1,11 @@
 cask "opentypeless" do
   arch arm: "arm64", intel: "x64"
 
-  version "2.3.1"
-  sha256 arm:   "d83dfa60d1efa4bda3fdf11ac0b29df596caa52311db29595306b0c4546ff706",
-         intel: "98f4109045a8b4427942d316e24c6eb88a180e3a35910a76a483c6cb33ac673d"
+  version "2.4.0"
+  sha256 arm:   "6e55a8223979e524ff331f018eb58eedd181ab782fa84d635e81941c19737986",
+         intel: "6752b31314e2e7f3ec8dcc8c6c9f6d8b51263f8331271f3a06a509ce4214ee98"
 
-  url "https://github.com/Tyler913/OpenTypeless/releases/download/2.3.1/OpenTypeless-#{version}-macOS-#{arch}.zip"
+  url "https://github.com/Tyler913/OpenTypeless/releases/download/2.4.0/OpenTypeless-#{version}-macOS-#{arch}.zip"
   name "OpenTypeless"
   desc "Voice typing: hold a key, talk, and cleaned-up text is pasted at the cursor"
   homepage "https://github.com/Tyler913/OpenTypeless"
